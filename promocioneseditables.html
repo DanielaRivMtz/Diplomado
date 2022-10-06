@@ -40,7 +40,51 @@
     </header>
 
     <div class="d-flex flex-row mb-3" style="margin: 50px 100px 0px 100px;">
-        <div class="p-2"><button type="button" class="btn btn-success">Nuevo</button></div>
+        <div class="p-2">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Nuevo</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Añadir promocion</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!--Aqui van los campos-->
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Nombre de la promocion">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Descripcion</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    placeholder="Descripcion de la promocion y los productos"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Vigencia</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Hasta cuando estara la promocion">
+                              </div>
+                              
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">Imagen de la promocion</label>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
         <div class="p-2"><button type="button" class="btn btn-danger">Eliminar</button></div>
         <div class="p-2"><button type="button" class="btn btn-warning">Editar</button></div>
     </div>
@@ -101,6 +145,13 @@
             <h6>Todos los derechos reservados</h6>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
 
 </body>
 
