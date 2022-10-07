@@ -51,30 +51,34 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Añadir promocion</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Añadir promoción</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <!--Aqui van los campos-->
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                                <label for="exampleFormControlInput1" class="form-label">Nombre</label><span style="color: red;">*</span>
                                 <input type="text" class="form-control" id="exampleFormControlInput1"
                                     placeholder="Nombre de la promocion">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">Descripcion</label>
+                                <label for="exampleFormControlTextarea1" class="form-label">Descripción</label><span style="color: red;">*</span>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
                                     placeholder="Descripcion de la promocion y los productos"></textarea>
                             </div>
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Vigencia</label>
+                                <label for="exampleFormControlInput1" class="form-label">Vigencia</label><span style="color: red;">*</span>
                                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Hasta cuando estara la promocion">
                               </div>
                               
                             <div class="mb-3">
-                                <label for="formFile" class="form-label">Imagen de la promocion</label>
+                                <label for="formFile" class="form-label">Imagen de la promoción</label><span style="color: red;">*</span>
                                 <input class="form-control" type="file" id="formFile">
+                            </div>
+
+                            <div class="mb-3">
+                                <span style="color: red;">* Campo obligatorio</span>
                             </div>
 
                         </div>
